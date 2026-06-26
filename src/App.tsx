@@ -505,14 +505,68 @@ export default function App() {
                               </div>
                             </div>
 
-                            {/* Floating Landscape Illustration Card */}
-                            <div className="hidden md:block h-40 relative z-10">
-                              <img 
-                                src="/src/assets/images/hero_quote_banner_1782409937830.jpg" 
-                                referrerPolicy="no-referrer"
-                                alt="Daily Calming Landscape"
-                                className="w-full h-full object-cover rounded-2xl border border-slate-200/65 shadow-xs hover:shadow-md transition-all duration-300"
-                              />
+                            {/* Floating Code-Generated Decorative Banner */}
+                            <div className="hidden md:block h-40 relative z-10 w-full overflow-hidden rounded-2xl border border-slate-200/65 shadow-xs hover:shadow-md transition-all duration-300 bg-white/40 backdrop-blur-md">
+                              <svg viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full select-none">
+                                {/* Defs for gradients */}
+                                <defs>
+                                  <linearGradient id="skyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stopColor="#F5F3FF" />
+                                    <stop offset="60%" stopColor="#EEF2FF" />
+                                    <stop offset="100%" stopColor="#E0E7FF" />
+                                  </linearGradient>
+                                  <linearGradient id="sunGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stopColor="#818CF8" stopOpacity="0.85" />
+                                    <stop offset="100%" stopColor="#C084FC" stopOpacity="0.4" />
+                                  </linearGradient>
+                                  <linearGradient id="wave1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stopColor="#6366F1" stopOpacity="0.3" />
+                                    <stop offset="100%" stopColor="#4F46E5" stopOpacity="0.05" />
+                                  </linearGradient>
+                                  <linearGradient id="wave2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stopColor="#10B981" stopOpacity="0.2" />
+                                    <stop offset="100%" stopColor="#3B82F6" stopOpacity="0.05" />
+                                  </linearGradient>
+                                  <linearGradient id="wave3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stopColor="#4F46E5" stopOpacity="0.4" />
+                                    <stop offset="100%" stopColor="#312E81" stopOpacity="0.25" />
+                                  </linearGradient>
+                                </defs>
+
+                                {/* Background layer */}
+                                <rect width="100%" height="100%" fill="url(#skyGrad)" />
+
+                                {/* Grid of Focus Lines */}
+                                <g opacity="0.12">
+                                  <line x1="80" y1="0" x2="80" y2="240" stroke="#4F46E5" strokeWidth="0.5" strokeDasharray="3 3" />
+                                  <line x1="160" y1="0" x2="160" y2="240" stroke="#4F46E5" strokeWidth="0.5" strokeDasharray="3 3" />
+                                  <line x1="240" y1="0" x2="240" y2="240" stroke="#4F46E5" strokeWidth="0.5" strokeDasharray="3 3" />
+                                  <line x1="320" y1="0" x2="320" y2="240" stroke="#4F46E5" strokeWidth="0.5" strokeDasharray="3 3" />
+                                  <line x1="0" y1="60" x2="400" y2="60" stroke="#4F46E5" strokeWidth="0.5" strokeDasharray="3 3" />
+                                  <line x1="0" y1="120" x2="400" y2="120" stroke="#4F46E5" strokeWidth="0.5" strokeDasharray="3 3" />
+                                  <line x1="0" y1="180" x2="400" y2="180" stroke="#4F46E5" strokeWidth="0.5" strokeDasharray="3 3" />
+                                </g>
+
+                                {/* Glowing Orb of Focus */}
+                                <circle cx="310" cy="90" r="48" fill="url(#sunGrad)" />
+
+                                {/* Abstract Hills/Waves of Workload/Progress */}
+                                <path d="M-20,240 C80,130 180,210 420,120 L420,240 Z" fill="url(#wave1)" />
+                                <path d="M-20,240 C120,170 240,110 420,180 L420,240 Z" fill="url(#wave2)" />
+                                <path d="M-20,240 C100,200 280,140 420,140 L420,240 Z" fill="url(#wave3)" />
+
+                                {/* Decorative Stars/Particles */}
+                                <g opacity="0.85">
+                                  {/* Little twinkling diamonds */}
+                                  <path d="M 120,60 L 123,65 L 128,66 L 123,67 L 120,72 L 117,67 L 112,66 L 117,65 Z" fill="#6366F1" />
+                                  <path d="M 220,40 L 221.5,43 L 224.5,44 L 221.5,45 L 220,48 L 218.5,45 L 215.5,44 L 218.5,43 Z" fill="#10B981" opacity="0.75" />
+                                  <path d="M 70,110 L 71.5,113 L 74.5,114 L 71.5,115 L 70,118 L 68.5,115 L 65.5,114 L 68.5,113 Z" fill="#818CF8" opacity="0.6" />
+                                </g>
+
+                                {/* Productivity concentric rings */}
+                                <circle cx="310" cy="90" r="66" fill="none" stroke="#6366F1" strokeWidth="0.5" strokeDasharray="2 6" opacity="0.4" />
+                                <circle cx="310" cy="90" r="84" fill="none" stroke="#10B981" strokeWidth="0.5" strokeDasharray="1 8" opacity="0.3" />
+                              </svg>
                             </div>
                           </div>
 

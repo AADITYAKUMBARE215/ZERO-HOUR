@@ -1,224 +1,115 @@
-<div align="center">
-
 # 🚀 ZERO HOUR
 
-### Turn Panic into Progress.
+> **Turn Panic into Progress.**
 
-### AI-Powered Execution Partner built with Google Gemini AI
-
-[![Google Gemini](https://img.shields.io/badge/Google-Gemini%20AI-4285F4?style=for-the-badge&logo=google)](https://ai.google.dev/)
-[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react)](https://react.dev/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-[![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?style=for-the-badge&logo=sqlite)](https://sqlite.org/)
-[![Express](https://img.shields.io/badge/Express.js-Backend-000000?style=for-the-badge&logo=express)]
+ZERO HOUR is an AI-powered execution partner that transforms goals into structured execution plans, predicts deadline risks, detects workload conflicts, and generates adaptive recovery strategies using **Google Gemini AI**.
 
 ---
 
-### 🌐 Live Demo
+## 🌐 Live Demo
+
 **https://zero-hour-845495711251.asia-southeast1.run.app**
 
-### 📂 GitHub Repository
-**https://github.com/AADITYAKUMBARE215/ZERO-HOUR**
+## 📂 GitHub Repository
 
-</div>
+**https://github.com/AADITYAKUMBARE215/ZERO-HOUR**
 
 ---
 
 # 📖 Problem
 
-Traditional productivity apps help users **organize** tasks.
+Traditional productivity apps organize tasks but fail to help users execute them effectively.
 
-They do **not** help users **execute** them.
+People miss deadlines because they:
 
-People usually miss deadlines because they:
-
-- underestimate the work remaining
-- overestimate their available time
+- underestimate workload
+- overcommit their available time
 - don't know what to prioritize
 - fail to recover after falling behind
-- receive no intelligent guidance throughout execution
 
-Most productivity tools stop at creating a to-do list.
-
-ZERO HOUR goes much further.
+ZERO HOUR solves this by acting as an intelligent execution partner instead of just another task manager.
 
 ---
 
 # 💡 Solution
 
-ZERO HOUR is an AI-powered execution partner that transforms a simple goal into an adaptive execution system.
+ZERO HOUR continuously analyzes goals, workload, deadlines, and progress to help users stay on track.
 
-Instead of only storing tasks, it continuously:
+Using Google's Gemini AI, it:
 
-- breaks goals into milestones
-- creates execution plans
-- predicts deadline risks
-- recommends what to work on next
-- detects workload conflicts
-- generates recovery strategies
-- coaches the user every day
-
-It behaves like having an AI project manager working alongside you.
+- Breaks goals into milestones and tasks
+- Creates execution schedules
+- Predicts deadline risks
+- Detects workload conflicts
+- Suggests recovery strategies
+- Coaches users throughout execution
 
 ---
 
-# ✨ Key Features
+# ✨ Features
 
-## 🧠 Planner Agent
+### 🧠 Planner Agent
 
-Transforms a goal into:
+Transforms goals into structured milestones and actionable tasks.
 
-- Milestones
-- Actionable Tasks
-- Estimated Hours
-- Execution Timeline
+### 📅 Scheduler Agent
 
----
+Creates dynamic weekly execution schedules based on deadlines, remaining work, and available focus time.
 
-## 📅 Scheduler Agent
+### ⚠️ Risk Analyzer
 
-Automatically creates an intelligent weekly schedule based on:
+Predicts the likelihood of missing deadlines using:
 
-- deadlines
-- available focus hours
-- goal allocation
-- remaining work
+- Progress
+- Remaining work
+- Time elapsed
+- Goal priority
+- Daily workload
 
-Includes:
+### 🎯 Mission Commander
 
-- Weekly Allocation Map
-- Daily Schedule
-- Interactive Schedule Viewer
+Identifies the highest-impact task to work on next.
 
----
+### 🔄 Recovery Planner
 
-## ⚠️ Risk Analyzer
+Generates multiple recovery strategies when users fall behind schedule.
 
-Continuously evaluates:
+### 🤝 Daily Coach
 
-- Remaining Work
-- Daily Velocity
-- Expected Progress
-- Timeline Pressure
-- Capacity Balance
+Provides personalized coaching based on progress, risk, and productivity.
 
-Provides realistic success probability instead of simple progress bars.
+### ⚖️ Conflict Detection
 
----
+Detects overcommitment by comparing:
 
-## 🎯 Mission Commander
+- Daily Goal Allocation
+- Workspace Daily Capacity
 
-Determines:
+### ⏱️ Focus Arena
 
-> **What should I work on next?**
-
-Prioritization considers:
-
-- Deadline
-- Priority
-- Remaining Work
-- Risk Reduction
-- Success Probability
+Includes a customizable focus timer with manual task completion and automatic progress updates.
 
 ---
 
-## 🔄 Recovery Planner
-
-If the user falls behind, ZERO HOUR generates three recovery strategies.
-
-### Plan A
-Balanced Recovery
-
-### Plan B
-Aggressive Recovery
-
-### Plan C
-Scope Reduction
-
-Each strategy includes:
-
-- Required Daily Focus
-- Success Probability
-- Trade-offs
-- Burnout Risk
-
----
-
-## 🤝 Daily AI Coach
-
-Provides personalized coaching based on:
-
-- progress
-- risk
-- deadlines
-- workload
-- completed tasks
-
-The coaching style adapts depending on the user's current situation.
-
----
-
-## ⚖️ Goal Conflict Detection
-
-Compares:
-
-Total Goal Allocation
-
-vs
-
-Available Daily Capacity
-
-Explains:
-
-- over-allocation
-- capacity deficit
-- workload imbalance
-- suggested adjustments
-
----
-
-## ⏱️ Focus Mode
-
-Includes:
-
-- Custom Focus Timer
-- Preset Durations
-- Manual Task Completion
-- Automatic Progress Updates
-
----
-
-# 🧠 AI Agent Architecture
+# 🤖 AI Workflow
 
 ```
-                 User
-                   │
-                   ▼
-             Goal Submission
-                   │
-                   ▼
-        Google Gemini AI Engine
-                   │
- ┌──────────────────────────────────┐
- │                                  │
- │ Planner Agent                    │
- │ Scheduler Agent                  │
- │ Risk Analyzer                    │
- │ Mission Commander                │
- │ Recovery Planner                 │
- │ Daily Coach                      │
- │ Goal Conflict Detector           │
- │                                  │
- └──────────────────────────────────┘
-                   │
-                   ▼
-            Express Backend
-                   │
-                   ▼
-             SQLite Database
-                   │
-                   ▼
-             React Frontend
+User Goal
+    │
+    ▼
+Planner Agent
+    │
+    ▼
+Scheduler Agent
+    │
+    ├── Risk Analyzer
+    ├── Conflict Detector
+    ├── Mission Commander
+    ├── Recovery Planner
+    └── Daily Coach
+    │
+    ▼
+Updated Dashboard
 ```
 
 ---
@@ -241,7 +132,7 @@ Includes:
 
 - SQLite
 
-### Artificial Intelligence
+### AI
 
 - Google Gemini API
 - Google AI Studio
@@ -250,15 +141,10 @@ Includes:
 
 # 🌟 Google Technologies Used
 
-### Google AI Studio
+- Google AI Studio
+- Gemini API
 
-- Application Development
-- Rapid Iteration
-- Deployment
-
-### Gemini API
-
-Used across multiple AI agents for:
+Gemini powers:
 
 - Goal Planning
 - Task Breakdown
@@ -266,45 +152,29 @@ Used across multiple AI agents for:
 - Risk Analysis
 - Recovery Planning
 - Daily Coaching
-- Prioritization
+- Mission Prioritization
+- Conflict Detection
 
 ---
 
 # 🚀 Why ZERO HOUR?
 
-Unlike traditional productivity apps, ZERO HOUR actively reasons about execution.
-
-It continuously answers questions like:
+Unlike traditional productivity apps, ZERO HOUR continuously answers:
 
 - What should I work on today?
 - Am I still on track?
 - Why am I at risk?
-- What happens if I continue at this pace?
-- How can I recover?
-- Am I overcommitting myself?
+- Can I still meet my deadline?
+- How should I recover?
+- Am I taking on more work than I can realistically complete?
 
 It doesn't just organize work.
 
-It helps users **finish it**.
+It helps users **finish it.**
 
 ---
 
-# 📊 Core Capabilities
-
-- AI Goal Planning
-- AI Scheduling
-- Dynamic Risk Prediction
-- Success Probability Estimation
-- Goal Conflict Detection
-- Adaptive Recovery Planning
-- Daily AI Coaching
-- Capacity Planning
-- Focus Sessions
-- Progress Tracking
-
----
-
-# ⚙️ Installation
+# ⚙️ Run Locally
 
 Clone the repository
 
@@ -318,20 +188,16 @@ Install dependencies
 npm install
 ```
 
-Run locally
+Run the project
 
 ```bash
 npm run dev
 ```
 
----
-
-# 🔑 Environment Variable
-
 Create a `.env` file:
 
-```
-GEMINI_API_KEY=YOUR_API_KEY
+```env
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
 ```
 
 ---
@@ -340,16 +206,12 @@ GEMINI_API_KEY=YOUR_API_KEY
 
 **Aaditya Kumbare**
 
-Artificial Intelligence & Data Science Engineering Student
+AI & Data Science Engineering Student
 
 Built for **Vibe2Ship 2026 Hackathon**
 
 ---
 
-<div align="center">
+## ⭐ If you liked ZERO HOUR, consider giving this repository a star.
 
-## ⭐ If you enjoyed ZERO HOUR, consider starring the repository!
-
-### Turn Panic into Progress.
-
-</div>
+**Turn Panic into Progress.**
