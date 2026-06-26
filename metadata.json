@@ -1,0 +1,6 @@
+{
+  "name": "ZERO HOUR",
+  "description": "An AI-powered productivity partner that turns high-pressure situations into clear step-by-step action plans, featuring dynamic risk analyses, automated schedulers, a Daily Coach, and the Daily Mission Commander.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
